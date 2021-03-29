@@ -1,0 +1,20 @@
+.cert-card {
+  display: inline-block;
+  text-align: center;
+  box-shadow: 5px 5px 3px rgba(101, 186, 207, 0.5);
+  background-color: rgba(201, 192, 192, 0.2);
+  cursor: pointer;
+  border-radius: 3%;
+  margin-right: 20px;
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+.cert-title {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.cert-body img {
+  width: 20vw;
+}

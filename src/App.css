@@ -1,45 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
 .app {
-  height: 100vh;
-  background: rgb(2,0,36);
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-  font-family: 'Roboto', sans-serif;
-  
-}
-
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  background-color: rgba(95, 95, 95, 0.3);
-  min-height: 8vh;
-  color: white;
-}
-
-.menu-left:hover {
-  cursor: pointer;
-}
-
-.menu-right:hover {
-  background-color:rgba(95, 95, 95, 0.5);
-  cursor: pointer;
-  font-size: 110%;
-  transition: 0.25s;
-}
-
-.menu-left {
-  float: left;
-  display: block;
-  line-height: 8vh;
-  padding: 0 20px;
-}
-
-.menu-right {
-  float: right;
-  display: block;
-  line-height: 8vh;
-  padding: 0 20px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-attachment: scroll;
+  font-family: "Roboto", sans-serif;
 }
 
 .content {
@@ -49,11 +19,13 @@
 
 .title {
   z-index: 1;
+  padding-top: 5vh;
   padding-left: 5vw;
+  height: 100vh;
 }
 
 .logo {
-  z-index: 0;
+  z-index: 1;
 }
 
 .ripple {
@@ -77,6 +49,89 @@
   animation: App-logo-spin infinite 20s linear;
 }
 
+.cert-container {
+  z-index: 2;
+  padding-top: 5vh;
+  padding-left: 5vw;
+  overflow: auto;
+  height: 100vh;
+}
+
+.cert-sub-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.cert-container .showBtn {
+  background-color: rgba(95, 95, 95, 0.3);
+  font-size: 50%;
+  margin-top: 20px;
+  text-align: center;
+  width: 8vw;
+  padding: 10px;
+  border-radius: 25px;
+  transition: 0.25s;
+}
+
+.cert-container .showBtn:hover {
+  cursor: pointer;
+  background-color: rgba(95, 95, 95, 0.5);
+  font-size: 55%;
+  transition: 0.25s;
+}
+
+.cert-container .showBtn:active {
+  cursor: pointer;
+  background-color: rgba(95, 95, 95, 1);
+  font-size: 55%;
+  transition: 0.25s;
+}
+
+.vertical-buttons {
+  width: 10vw;
+  position: sticky;
+  left: 85vw;
+  bottom: 5vh;
+}
+
+.vertical-buttons ul {
+  padding: 0;
+  margin: 0;
+  width: 10vw;
+  list-style: none;
+}
+
+.vertical-buttons li {
+  text-align: center;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(95, 95, 95, 0.3);
+  border-radius: 25px;
+  transition: 0.25s;
+}
+
+.vertical-buttons li:hover {
+  cursor: pointer;
+  background-color: rgba(95, 95, 95, 0.5);
+  font-size: 105%;
+  transition: 0.25s;
+}
+
+.vertical-buttons li:active {
+  cursor: pointer;
+  background-color: rgba(95, 95, 95, 1);
+  font-size: 105%;
+  transition: 0.25s;
+}
+
+.contact-container {
+  height: 100vh;
+  padding-top: 5vh;
+  padding-left: 5vw;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -88,14 +143,12 @@
 
 @keyframes background-move {
   0% {
-    box-shadow: 0 0 0 0rem rgba(255, 255, 255, 0.1)
+    box-shadow: 0 0 0 0rem rgba(255, 255, 255, 0.1);
   }
   100% {
-    box-shadow: 0 0 0 60rem rgba(255, 255, 255, 0)
+    box-shadow: 0 0 0 60rem rgba(255, 255, 255, 0);
   }
 }
 
-
-@media(max-width: 768px) {
-
+@media (max-width: 768px) {
 }
